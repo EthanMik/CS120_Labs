@@ -1,0 +1,4 @@
+/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles/lab1.dir
+/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles/lab2.dir
+/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles/edit_cache.dir
+/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir

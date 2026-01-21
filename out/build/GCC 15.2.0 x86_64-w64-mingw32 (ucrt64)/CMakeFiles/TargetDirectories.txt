@@ -1,4 +1,0 @@
-C:/Users/etmik/cmaketest2/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/lab1.dir
-C:/Users/etmik/cmaketest2/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/lab2.dir
-C:/Users/etmik/cmaketest2/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/edit_cache.dir
-C:/Users/etmik/cmaketest2/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/rebuild_cache.dir
