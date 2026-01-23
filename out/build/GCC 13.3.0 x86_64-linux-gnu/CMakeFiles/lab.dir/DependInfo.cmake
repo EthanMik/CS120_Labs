@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ethan/CS120_Labs/lab2/grade_calculator.cpp" "CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o" "gcc" "CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -143,6 +143,32 @@ lab2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
 .PHONY : lab2/fast
 
+#=============================================================================
+# Target rules for targets named lab
+
+# Build rule for target.
+lab: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab
+.PHONY : lab
+
+# fast build rule for target.
+lab/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/build
+.PHONY : lab/fast
+
+#=============================================================================
+# Target rules for targets named run
+
+# Build rule for target.
+run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
+.PHONY : run
+
+# fast build rule for target.
+run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+.PHONY : run/fast
+
 lab1/foo.o: lab1/foo.cpp.o
 .PHONY : lab1/foo.o
 
@@ -191,29 +217,29 @@ lab1/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1/main.cpp.s
 .PHONY : lab1/main.cpp.s
 
-lab2/main.o: lab2/main.cpp.o
-.PHONY : lab2/main.o
+lab2/grade_calculator.o: lab2/grade_calculator.cpp.o
+.PHONY : lab2/grade_calculator.o
 
 # target to build an object file
-lab2/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/main.cpp.o
-.PHONY : lab2/main.cpp.o
+lab2/grade_calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o
+.PHONY : lab2/grade_calculator.cpp.o
 
-lab2/main.i: lab2/main.cpp.i
-.PHONY : lab2/main.i
+lab2/grade_calculator.i: lab2/grade_calculator.cpp.i
+.PHONY : lab2/grade_calculator.i
 
 # target to preprocess a source file
-lab2/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/main.cpp.i
-.PHONY : lab2/main.cpp.i
+lab2/grade_calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.i
+.PHONY : lab2/grade_calculator.cpp.i
 
-lab2/main.s: lab2/main.cpp.s
-.PHONY : lab2/main.s
+lab2/grade_calculator.s: lab2/grade_calculator.cpp.s
+.PHONY : lab2/grade_calculator.s
 
 # target to generate assembly for a file
-lab2/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/main.cpp.s
-.PHONY : lab2/main.cpp.s
+lab2/grade_calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.s
+.PHONY : lab2/grade_calculator.cpp.s
 
 # Help Target
 help:
@@ -223,6 +249,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... lab"
+	@echo "... run"
 	@echo "... lab1"
 	@echo "... lab2"
 	@echo "... lab1/foo.o"
@@ -231,9 +259,9 @@ help:
 	@echo "... lab1/main.o"
 	@echo "... lab1/main.i"
 	@echo "... lab1/main.s"
-	@echo "... lab2/main.o"
-	@echo "... lab2/main.i"
-	@echo "... lab2/main.s"
+	@echo "... lab2/grade_calculator.o"
+	@echo "... lab2/grade_calculator.i"
+	@echo "... lab2/grade_calculator.s"
 .PHONY : help
 
 

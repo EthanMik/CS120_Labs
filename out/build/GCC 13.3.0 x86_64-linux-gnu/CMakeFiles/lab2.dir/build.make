@@ -69,28 +69,28 @@ include CMakeFiles/lab2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab2.dir/flags.make
 
-CMakeFiles/lab2.dir/lab2/main.cpp.o: CMakeFiles/lab2.dir/flags.make
-CMakeFiles/lab2.dir/lab2/main.cpp.o: /home/ethan/CS120_Labs/lab2/main.cpp
-CMakeFiles/lab2.dir/lab2/main.cpp.o: CMakeFiles/lab2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab2.dir/lab2/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab2.dir/lab2/main.cpp.o -MF CMakeFiles/lab2.dir/lab2/main.cpp.o.d -o CMakeFiles/lab2.dir/lab2/main.cpp.o -c /home/ethan/CS120_Labs/lab2/main.cpp
+CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o: CMakeFiles/lab2.dir/flags.make
+CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o: /home/ethan/CS120_Labs/lab2/grade_calculator.cpp
+CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o: CMakeFiles/lab2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o -MF CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o.d -o CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o -c /home/ethan/CS120_Labs/lab2/grade_calculator.cpp
 
-CMakeFiles/lab2.dir/lab2/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lab2.dir/lab2/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/CS120_Labs/lab2/main.cpp > CMakeFiles/lab2.dir/lab2/main.cpp.i
+CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/CS120_Labs/lab2/grade_calculator.cpp > CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.i
 
-CMakeFiles/lab2.dir/lab2/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab2.dir/lab2/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/CS120_Labs/lab2/main.cpp -o CMakeFiles/lab2.dir/lab2/main.cpp.s
+CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/CS120_Labs/lab2/grade_calculator.cpp -o CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.s
 
 # Object files for target lab2
 lab2_OBJECTS = \
-"CMakeFiles/lab2.dir/lab2/main.cpp.o"
+"CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o"
 
 # External object files for target lab2
 lab2_EXTERNAL_OBJECTS =
 
-bin/lab2: CMakeFiles/lab2.dir/lab2/main.cpp.o
+bin/lab2: CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.o
 bin/lab2: CMakeFiles/lab2.dir/build.make
 bin/lab2: CMakeFiles/lab2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/lab2"

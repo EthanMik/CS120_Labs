@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu
 
 # The main recursive "all" target.
 all: CMakeFiles/lab1.dir/all
+all: CMakeFiles/lab.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +74,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/lab1.dir/clean
 clean: CMakeFiles/lab2.dir/clean
+clean: CMakeFiles/lab.dir/clean
+clean: CMakeFiles/run.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +129,58 @@ lab2: CMakeFiles/lab2.dir/rule
 CMakeFiles/lab2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/clean
 .PHONY : CMakeFiles/lab2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lab.dir
+
+# All Build rule for target.
+CMakeFiles/lab.dir/all: CMakeFiles/lab1.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num= "Built target lab"
+.PHONY : CMakeFiles/lab.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
+.PHONY : CMakeFiles/lab.dir/rule
+
+# Convenience name for target.
+lab: CMakeFiles/lab.dir/rule
+.PHONY : lab
+
+# clean rule for target.
+CMakeFiles/lab.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab.dir/build.make CMakeFiles/lab.dir/clean
+.PHONY : CMakeFiles/lab.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run.dir
+
+# All Build rule for target.
+CMakeFiles/run.dir/all: CMakeFiles/lab1.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num= "Built target run"
+.PHONY : CMakeFiles/run.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
+.PHONY : CMakeFiles/run.dir/rule
+
+# Convenience name for target.
+run: CMakeFiles/run.dir/rule
+.PHONY : run
+
+# clean rule for target.
+CMakeFiles/run.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
+.PHONY : CMakeFiles/run.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

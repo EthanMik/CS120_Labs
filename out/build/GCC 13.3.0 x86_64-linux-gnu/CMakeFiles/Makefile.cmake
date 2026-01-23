@@ -106,4 +106,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab1.dir/DependInfo.cmake"
   "CMakeFiles/lab2.dir/DependInfo.cmake"
+  "CMakeFiles/lab.dir/DependInfo.cmake"
+  "CMakeFiles/run.dir/DependInfo.cmake"
   )
