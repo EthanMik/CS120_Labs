@@ -101,19 +101,20 @@ int main() {
         string category;
         double score;
         get_category_and_score(line, &category, &score);
+        score = std::min(score, 100.0);
 
         if (category == "hw") {
             homework_score += score;
             homework_amount += 1;
         } else if (category == "lw") {
             if (score >= 50) {
-                labwork_score += score;
+                labwork_score += 100;
             }
             labwork_amount += 1;
         } else if (category == "exam") {
             midterm_exams_score += score;
             midterm_amount += 1;
-            if (score == 0 || score < lowest_midterm_exam_score) {
+            if (lowest_midterm_exam_score == 0 || score < lowest_midterm_exam_score) {
                 lowest_midterm_exam_score = score;
             }
         } else if (category == "final-exam") {
@@ -136,31 +137,33 @@ int main() {
         midterm_amount -= 1;
     } 
 
-    cout << homework_score << endl;
     homework_score = homework_amount > 0 ? (homework_score / static_cast<double>(homework_amount)) : 0;
-    cout << homework_score << endl;
     labwork_score = labwork_amount > 0 ? (labwork_score / static_cast<double>(labwork_amount)) : 0;
-    reading_score = reading_amount > 0 ? (reading_score / static_cast<double>(reading_amount)) : 0;
-    engagement_score = engagement_amount > 0 ? (engagement_score / static_cast<double>(engagement_amount)) : 0;
+    reading_score = reading_amount > 0 ? reading_score / static_cast<double>(reading_amount) : 0;
+    engagement_score = engagement_amount > 0 ? engagement_score / static_cast<double>(engagement_amount) : 0;
     midterm_exams_score = midterm_amount > 0 ? (midterm_exams_score / static_cast<double>(midterm_amount)) : 0;
     
+    engagement_score = std::min(engagement_score + 15, 100.0);
+    reading_score = std::min(reading_score + 15, 100.0);
+
     
     double weighted_total = homework_score * homework_percent
         + labwork_score * labwork_percent + reading_score * reading_percent
         + engagement_score * engagement_percent + midterm_exams_score * midterm_percent
-        + midterm_exams_score * midterm_percent + final_exam_score * final_percent;
+        + final_exam_score * final_percent;
 
     char final_letter_grade = 'X';
 
-    if (weighted_total < 60) {
+    double rounded_weighted_total = weighted_total + .5;
+    if (rounded_weighted_total < 60) {
         final_letter_grade = 'F';
-    } else if (weighted_total < 70 && weighted_total >= 60) {
+    } else if (rounded_weighted_total < 70 && rounded_weighted_total >= 60) {
         final_letter_grade = 'D';
-    } else if (weighted_total < 80 && weighted_total >= 70) {
+    } else if (rounded_weighted_total < 80 && rounded_weighted_total >= 70) {
         final_letter_grade = 'C';
-    } else if (weighted_total < 90 && weighted_total >= 80) {
+    } else if (rounded_weighted_total < 90 && rounded_weighted_total >= 80) {
         final_letter_grade = 'B';
-    } else if (weighted_total >= 90) {
+    } else if (rounded_weighted_total >= 90) {
         final_letter_grade = 'A';
     }
 
