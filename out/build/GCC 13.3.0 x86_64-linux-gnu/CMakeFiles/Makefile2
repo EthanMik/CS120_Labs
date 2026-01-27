@@ -74,6 +74,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/lab1.dir/clean
 clean: CMakeFiles/lab2.dir/clean
+clean: CMakeFiles/lab3.dir/clean
+clean: CMakeFiles/lab4.dir/clean
 clean: CMakeFiles/lab.dir/clean
 clean: CMakeFiles/run.dir/clean
 .PHONY : clean
@@ -85,12 +87,12 @@ clean: CMakeFiles/run.dir/clean
 CMakeFiles/lab1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=1,2,3 "Built target lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=1,2 "Built target lab1"
 .PHONY : CMakeFiles/lab1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
 .PHONY : CMakeFiles/lab1.dir/rule
@@ -111,7 +113,7 @@ CMakeFiles/lab1.dir/clean:
 CMakeFiles/lab2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=4,5 "Built target lab2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=3,4 "Built target lab2"
 .PHONY : CMakeFiles/lab2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -131,6 +133,58 @@ CMakeFiles/lab2.dir/clean:
 .PHONY : CMakeFiles/lab2.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/lab3.dir
+
+# All Build rule for target.
+CMakeFiles/lab3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=5,6,7 "Built target lab3"
+.PHONY : CMakeFiles/lab3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
+.PHONY : CMakeFiles/lab3.dir/rule
+
+# Convenience name for target.
+lab3: CMakeFiles/lab3.dir/rule
+.PHONY : lab3
+
+# clean rule for target.
+CMakeFiles/lab3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/clean
+.PHONY : CMakeFiles/lab3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lab4.dir
+
+# All Build rule for target.
+CMakeFiles/lab4.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=8,9,10 "Built target lab4"
+.PHONY : CMakeFiles/lab4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
+.PHONY : CMakeFiles/lab4.dir/rule
+
+# Convenience name for target.
+lab4: CMakeFiles/lab4.dir/rule
+.PHONY : lab4
+
+# clean rule for target.
+CMakeFiles/lab4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/clean
+.PHONY : CMakeFiles/lab4.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/lab.dir
 
 # All Build rule for target.
@@ -142,7 +196,7 @@ CMakeFiles/lab.dir/all: CMakeFiles/lab1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
 .PHONY : CMakeFiles/lab.dir/rule
@@ -168,7 +222,7 @@ CMakeFiles/run.dir/all: CMakeFiles/lab1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
 .PHONY : CMakeFiles/run.dir/rule

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/lab3.dir/lab3/boolean.cpp.o CMakeFiles/lab3.dir/lab3/boolean_functions.cpp.o -o bin/lab3 

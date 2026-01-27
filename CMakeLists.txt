@@ -12,7 +12,8 @@ set(ACTIVE_LAB "lab1" CACHE STRING "Lab target to build/run by default (e.g., la
 # If not listed, defaults to main.cpp
 set(LAB_ENTRY_POINTS
     "lab2:grade_calculator"
-    # "lab3:some_other_file"
+    "lab3:boolean"
+    "lab4:plateaus_and_basins"
 )
 
 # Parse overrides into a usable format

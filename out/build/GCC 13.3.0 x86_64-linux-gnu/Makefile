@@ -144,6 +144,32 @@ lab2/fast:
 .PHONY : lab2/fast
 
 #=============================================================================
+# Target rules for targets named lab3
+
+# Build rule for target.
+lab3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab3
+.PHONY : lab3
+
+# fast build rule for target.
+lab3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
+.PHONY : lab3/fast
+
+#=============================================================================
+# Target rules for targets named lab4
+
+# Build rule for target.
+lab4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab4
+.PHONY : lab4
+
+# fast build rule for target.
+lab4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/build
+.PHONY : lab4/fast
+
+#=============================================================================
 # Target rules for targets named lab
 
 # Build rule for target.
@@ -168,30 +194,6 @@ run: cmake_check_build_system
 run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
-
-lab1/foo.o: lab1/foo.cpp.o
-.PHONY : lab1/foo.o
-
-# target to build an object file
-lab1/foo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1/foo.cpp.o
-.PHONY : lab1/foo.cpp.o
-
-lab1/foo.i: lab1/foo.cpp.i
-.PHONY : lab1/foo.i
-
-# target to preprocess a source file
-lab1/foo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1/foo.cpp.i
-.PHONY : lab1/foo.cpp.i
-
-lab1/foo.s: lab1/foo.cpp.s
-.PHONY : lab1/foo.s
-
-# target to generate assembly for a file
-lab1/foo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1/foo.cpp.s
-.PHONY : lab1/foo.cpp.s
 
 lab1/main.o: lab1/main.cpp.o
 .PHONY : lab1/main.o
@@ -241,6 +243,102 @@ lab2/grade_calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/lab2/grade_calculator.cpp.s
 .PHONY : lab2/grade_calculator.cpp.s
 
+lab3/boolean.o: lab3/boolean.cpp.o
+.PHONY : lab3/boolean.o
+
+# target to build an object file
+lab3/boolean.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/lab3/boolean.cpp.o
+.PHONY : lab3/boolean.cpp.o
+
+lab3/boolean.i: lab3/boolean.cpp.i
+.PHONY : lab3/boolean.i
+
+# target to preprocess a source file
+lab3/boolean.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/lab3/boolean.cpp.i
+.PHONY : lab3/boolean.cpp.i
+
+lab3/boolean.s: lab3/boolean.cpp.s
+.PHONY : lab3/boolean.s
+
+# target to generate assembly for a file
+lab3/boolean.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/lab3/boolean.cpp.s
+.PHONY : lab3/boolean.cpp.s
+
+lab3/boolean_functions.o: lab3/boolean_functions.cpp.o
+.PHONY : lab3/boolean_functions.o
+
+# target to build an object file
+lab3/boolean_functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/lab3/boolean_functions.cpp.o
+.PHONY : lab3/boolean_functions.cpp.o
+
+lab3/boolean_functions.i: lab3/boolean_functions.cpp.i
+.PHONY : lab3/boolean_functions.i
+
+# target to preprocess a source file
+lab3/boolean_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/lab3/boolean_functions.cpp.i
+.PHONY : lab3/boolean_functions.cpp.i
+
+lab3/boolean_functions.s: lab3/boolean_functions.cpp.s
+.PHONY : lab3/boolean_functions.s
+
+# target to generate assembly for a file
+lab3/boolean_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/lab3/boolean_functions.cpp.s
+.PHONY : lab3/boolean_functions.cpp.s
+
+lab4/functions.o: lab4/functions.cpp.o
+.PHONY : lab4/functions.o
+
+# target to build an object file
+lab4/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/functions.cpp.o
+.PHONY : lab4/functions.cpp.o
+
+lab4/functions.i: lab4/functions.cpp.i
+.PHONY : lab4/functions.i
+
+# target to preprocess a source file
+lab4/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/functions.cpp.i
+.PHONY : lab4/functions.cpp.i
+
+lab4/functions.s: lab4/functions.cpp.s
+.PHONY : lab4/functions.s
+
+# target to generate assembly for a file
+lab4/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/functions.cpp.s
+.PHONY : lab4/functions.cpp.s
+
+lab4/plateaus_and_basins.o: lab4/plateaus_and_basins.cpp.o
+.PHONY : lab4/plateaus_and_basins.o
+
+# target to build an object file
+lab4/plateaus_and_basins.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/plateaus_and_basins.cpp.o
+.PHONY : lab4/plateaus_and_basins.cpp.o
+
+lab4/plateaus_and_basins.i: lab4/plateaus_and_basins.cpp.i
+.PHONY : lab4/plateaus_and_basins.i
+
+# target to preprocess a source file
+lab4/plateaus_and_basins.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/plateaus_and_basins.cpp.i
+.PHONY : lab4/plateaus_and_basins.cpp.i
+
+lab4/plateaus_and_basins.s: lab4/plateaus_and_basins.cpp.s
+.PHONY : lab4/plateaus_and_basins.s
+
+# target to generate assembly for a file
+lab4/plateaus_and_basins.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/plateaus_and_basins.cpp.s
+.PHONY : lab4/plateaus_and_basins.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,15 +351,26 @@ help:
 	@echo "... run"
 	@echo "... lab1"
 	@echo "... lab2"
-	@echo "... lab1/foo.o"
-	@echo "... lab1/foo.i"
-	@echo "... lab1/foo.s"
+	@echo "... lab3"
+	@echo "... lab4"
 	@echo "... lab1/main.o"
 	@echo "... lab1/main.i"
 	@echo "... lab1/main.s"
 	@echo "... lab2/grade_calculator.o"
 	@echo "... lab2/grade_calculator.i"
 	@echo "... lab2/grade_calculator.s"
+	@echo "... lab3/boolean.o"
+	@echo "... lab3/boolean.i"
+	@echo "... lab3/boolean.s"
+	@echo "... lab3/boolean_functions.o"
+	@echo "... lab3/boolean_functions.i"
+	@echo "... lab3/boolean_functions.s"
+	@echo "... lab4/functions.o"
+	@echo "... lab4/functions.i"
+	@echo "... lab4/functions.s"
+	@echo "... lab4/plateaus_and_basins.o"
+	@echo "... lab4/plateaus_and_basins.i"
+	@echo "... lab4/plateaus_and_basins.s"
 .PHONY : help
 
 
