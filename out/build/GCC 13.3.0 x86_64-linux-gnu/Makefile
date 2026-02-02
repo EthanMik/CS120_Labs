@@ -170,6 +170,19 @@ lab4/fast:
 .PHONY : lab4/fast
 
 #=============================================================================
+# Target rules for targets named lab5
+
+# Build rule for target.
+lab5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab5
+.PHONY : lab5
+
+# fast build rule for target.
+lab5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/build
+.PHONY : lab5/fast
+
+#=============================================================================
 # Target rules for targets named lab
 
 # Build rule for target.
@@ -339,6 +352,54 @@ lab4/plateaus_and_basins.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4.dir/build.make CMakeFiles/lab4.dir/lab4/plateaus_and_basins.cpp.s
 .PHONY : lab4/plateaus_and_basins.cpp.s
 
+lab5/functions.o: lab5/functions.cpp.o
+.PHONY : lab5/functions.o
+
+# target to build an object file
+lab5/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/functions.cpp.o
+.PHONY : lab5/functions.cpp.o
+
+lab5/functions.i: lab5/functions.cpp.i
+.PHONY : lab5/functions.i
+
+# target to preprocess a source file
+lab5/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/functions.cpp.i
+.PHONY : lab5/functions.cpp.i
+
+lab5/functions.s: lab5/functions.cpp.s
+.PHONY : lab5/functions.s
+
+# target to generate assembly for a file
+lab5/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/functions.cpp.s
+.PHONY : lab5/functions.cpp.s
+
+lab5/main.o: lab5/main.cpp.o
+.PHONY : lab5/main.o
+
+# target to build an object file
+lab5/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/main.cpp.o
+.PHONY : lab5/main.cpp.o
+
+lab5/main.i: lab5/main.cpp.i
+.PHONY : lab5/main.i
+
+# target to preprocess a source file
+lab5/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/main.cpp.i
+.PHONY : lab5/main.cpp.i
+
+lab5/main.s: lab5/main.cpp.s
+.PHONY : lab5/main.s
+
+# target to generate assembly for a file
+lab5/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/main.cpp.s
+.PHONY : lab5/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -353,6 +414,7 @@ help:
 	@echo "... lab2"
 	@echo "... lab3"
 	@echo "... lab4"
+	@echo "... lab5"
 	@echo "... lab1/main.o"
 	@echo "... lab1/main.i"
 	@echo "... lab1/main.s"
@@ -371,6 +433,12 @@ help:
 	@echo "... lab4/plateaus_and_basins.o"
 	@echo "... lab4/plateaus_and_basins.i"
 	@echo "... lab4/plateaus_and_basins.s"
+	@echo "... lab5/functions.o"
+	@echo "... lab5/functions.i"
+	@echo "... lab5/functions.s"
+	@echo "... lab5/main.o"
+	@echo "... lab5/main.i"
+	@echo "... lab5/main.s"
 .PHONY : help
 
 

@@ -14,6 +14,7 @@ set(LAB_ENTRY_POINTS
     "lab2:grade_calculator"
     "lab3:boolean"
     "lab4:plateaus_and_basins"
+    "lab5:main"
 )
 
 # Parse overrides into a usable format
