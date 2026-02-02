@@ -183,6 +183,19 @@ lab5/fast:
 .PHONY : lab5/fast
 
 #=============================================================================
+# Target rules for targets named lab6
+
+# Build rule for target.
+lab6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab6
+.PHONY : lab6
+
+# fast build rule for target.
+lab6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/build
+.PHONY : lab6/fast
+
+#=============================================================================
 # Target rules for targets named lab
 
 # Build rule for target.
@@ -400,6 +413,54 @@ lab5/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/lab5/main.cpp.s
 .PHONY : lab5/main.cpp.s
 
+lab6/functions.o: lab6/functions.cpp.o
+.PHONY : lab6/functions.o
+
+# target to build an object file
+lab6/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/lab6/functions.cpp.o
+.PHONY : lab6/functions.cpp.o
+
+lab6/functions.i: lab6/functions.cpp.i
+.PHONY : lab6/functions.i
+
+# target to preprocess a source file
+lab6/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/lab6/functions.cpp.i
+.PHONY : lab6/functions.cpp.i
+
+lab6/functions.s: lab6/functions.cpp.s
+.PHONY : lab6/functions.s
+
+# target to generate assembly for a file
+lab6/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/lab6/functions.cpp.s
+.PHONY : lab6/functions.cpp.s
+
+lab6/test_functions.o: lab6/test_functions.cpp.o
+.PHONY : lab6/test_functions.o
+
+# target to build an object file
+lab6/test_functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/lab6/test_functions.cpp.o
+.PHONY : lab6/test_functions.cpp.o
+
+lab6/test_functions.i: lab6/test_functions.cpp.i
+.PHONY : lab6/test_functions.i
+
+# target to preprocess a source file
+lab6/test_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/lab6/test_functions.cpp.i
+.PHONY : lab6/test_functions.cpp.i
+
+lab6/test_functions.s: lab6/test_functions.cpp.s
+.PHONY : lab6/test_functions.s
+
+# target to generate assembly for a file
+lab6/test_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/lab6/test_functions.cpp.s
+.PHONY : lab6/test_functions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -415,6 +476,7 @@ help:
 	@echo "... lab3"
 	@echo "... lab4"
 	@echo "... lab5"
+	@echo "... lab6"
 	@echo "... lab1/main.o"
 	@echo "... lab1/main.i"
 	@echo "... lab1/main.s"
@@ -439,6 +501,12 @@ help:
 	@echo "... lab5/main.o"
 	@echo "... lab5/main.i"
 	@echo "... lab5/main.s"
+	@echo "... lab6/functions.o"
+	@echo "... lab6/functions.i"
+	@echo "... lab6/functions.s"
+	@echo "... lab6/test_functions.o"
+	@echo "... lab6/test_functions.i"
+	@echo "... lab6/test_functions.s"
 .PHONY : help
 
 

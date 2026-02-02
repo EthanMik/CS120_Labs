@@ -15,6 +15,7 @@ set(LAB_ENTRY_POINTS
     "lab3:boolean"
     "lab4:plateaus_and_basins"
     "lab5:main"
+    "lab6:test_functions"
 )
 
 # Parse overrides into a usable format

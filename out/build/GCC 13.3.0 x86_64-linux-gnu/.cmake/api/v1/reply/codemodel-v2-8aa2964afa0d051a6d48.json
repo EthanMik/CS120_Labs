@@ -21,7 +21,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -42,7 +43,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -51,49 +53,56 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab-Debug-94352340dad8e2d2465f.json",
+					"jsonFile" : "target-lab-Debug-bb2cbfb55e94b18e3c5c.json",
 					"name" : "lab",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lab1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab1-Debug-a7f01ba3266480a0097f.json",
+					"jsonFile" : "target-lab1-Debug-98347cd6eeb464638b70.json",
 					"name" : "lab1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lab2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab2-Debug-0b2f1a78500154a9c9b8.json",
+					"jsonFile" : "target-lab2-Debug-3a2e1507ffec35cd96fa.json",
 					"name" : "lab2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lab3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab3-Debug-dc4eec2c42e7dfe9540a.json",
+					"jsonFile" : "target-lab3-Debug-37d4afefbd74b1a0263f.json",
 					"name" : "lab3",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lab4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab4-Debug-aab9d54a0a1f1df98872.json",
+					"jsonFile" : "target-lab4-Debug-39a8c421be6e3ec479df.json",
 					"name" : "lab4",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lab5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab5-Debug-fdba24bab07e7c43c013.json",
+					"jsonFile" : "target-lab5-Debug-674c55f3e2cedf2d9432.json",
 					"name" : "lab5",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "lab6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab6-Debug-b4052e4c62bb0ed1dce0.json",
+					"name" : "lab6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "run::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-run-Debug-dec8b37d29c13c480063.json",
+					"jsonFile" : "target-run-Debug-f6c4a8dc7c215160b0c7.json",
 					"name" : "run",
 					"projectIndex" : 0
 				}

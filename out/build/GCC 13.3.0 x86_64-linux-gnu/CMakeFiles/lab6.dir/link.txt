@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/lab6.dir/lab6/test_functions.cpp.o CMakeFiles/lab6.dir/lab6/functions.cpp.o -o bin/lab6 

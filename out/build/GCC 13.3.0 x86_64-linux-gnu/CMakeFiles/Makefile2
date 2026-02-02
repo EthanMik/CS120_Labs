@@ -77,6 +77,7 @@ clean: CMakeFiles/lab2.dir/clean
 clean: CMakeFiles/lab3.dir/clean
 clean: CMakeFiles/lab4.dir/clean
 clean: CMakeFiles/lab5.dir/clean
+clean: CMakeFiles/lab6.dir/clean
 clean: CMakeFiles/lab.dir/clean
 clean: CMakeFiles/run.dir/clean
 .PHONY : clean
@@ -210,6 +211,32 @@ lab5: CMakeFiles/lab5.dir/rule
 CMakeFiles/lab5.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/clean
 .PHONY : CMakeFiles/lab5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lab6.dir
+
+# All Build rule for target.
+CMakeFiles/lab6.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" --progress-num=14,15,16 "Built target lab6"
+.PHONY : CMakeFiles/lab6.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab6.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ethan/CS120_Labs/out/build/GCC 13.3.0 x86_64-linux-gnu/CMakeFiles" 0
+.PHONY : CMakeFiles/lab6.dir/rule
+
+# Convenience name for target.
+lab6: CMakeFiles/lab6.dir/rule
+.PHONY : lab6
+
+# clean rule for target.
+CMakeFiles/lab6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/clean
+.PHONY : CMakeFiles/lab6.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lab.dir

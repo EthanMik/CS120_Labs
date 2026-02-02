@@ -22,13 +22,15 @@ std::string deobfuscate(std::string, std::string) {
 // returns the filtered sentence
 std::string wordFilter(std::string sentence, std::string filter) {
     size_t start = 0;
-    char size = filter.size();
-    std::string filter_text{size, '#'};
-    start = sentence.find(filter, start);
-
-    sentence.replace(start, filter.size(), filter_text);
-    cout << sentence << endl;
-    return "";
+    std::string filter_text(filter.size(), '#');
+    
+    while (start < sentence.size()) {
+        start = sentence.find(filter, start);
+        if (start == std::string::npos) return sentence;
+        sentence.replace(start, filter.size(), filter_text);
+        start++;
+    }
+    return sentence;
 }
 
 // convert a string to a secure password
@@ -58,8 +60,10 @@ unsigned int palindromeCounter(std::string sentence) {
     std::string word;
     std::string reversed{};
     
+    if (sentence.size() == 1 || sentence.size() == 0) return 1;
+
     while (ss >> word) {
-        for (auto it = word.rend(); it != word.rbegin(); --it) {
+        for (auto it = word.rbegin(); it != word.rend(); ++it) {
             reversed += *it;
         }
 
@@ -69,5 +73,5 @@ unsigned int palindromeCounter(std::string sentence) {
 
         reversed = "";
     }
-    return 0;
+    return counter;
 }
