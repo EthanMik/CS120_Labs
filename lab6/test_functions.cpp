@@ -5,8 +5,7 @@
 // TODO(student): declare other functions, as needed
 
 void test_add() {
-    add("1", "1");
-    // assert_equal(add("1", "1"), "2");
+    assert_equal(add("9999", "1"), "10000");
     // TODO(student): add tests for add
 }
 
